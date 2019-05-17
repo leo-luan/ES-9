@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Engenharia de Software - Aula09</title>
+
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/night.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <p>
+            Universidade do Estado de Mato Grosso <br />
+            <em>Campus</em> Cáceres <br />
+            Faculdade de Ciências Exatas <br />
+            Bacharelado em Ciência da Computação
+          </p>
+          <br />
+          <h3>Engenharia de Software I</h3>
+          <h4>Capítulo 8 - Testes de Software</h4>
+          <br />
+          <p>
+            Leonardo Luan Martins da Silva <br />
+            17 de maio de 2019
+          </p>
+        </section>
+
+        <section style="text-align: left; font-size: 80%">
+          <h3>Introdução</h3>
+
+          <section>
+            <ul>
+              <li style="margin-bottom: 20px">O processo de teste tem dois objetivos distintos:</li>
+              <ul>
+                <li style="margin-bottom: 20px">Demonstrar ao desenvolvedor e ao cliente que o software atende a seus requisitos. Isso significa é necessário realizar ao menos um teste por requisito.</li>
+                <li>Descobrir situações em que o software se comporta de maneira incorreta, indesejável ou de forma diferente das especificações.</li>
+              </ul>
+            </ul>
+          </section>
+
+          <section>
+            <ul>
+              <li style="margin-bottom: 20px">Os testes fazem parte, portanto, da fase de validação e verificação do software:</li>
+              <ul>
+                <li style="margin-bottom: 20px">Validação: ‘estamos construindo o produto certo?’</li>
+                <li>Verificação: ‘estamos construindo o produto da maneira certa?’</li>
+              </ul>
+            </ul>
+          </section>
+				</section>
+
+        <section style="text-align: left; font-size: 80%">
+          <h3>Testes de desenvolvimento</h3>
+
+          <section>
+            <ul>
+              <li style="margin-bottom: 20px">Incluem todas as atividades de testes que são realizadas pela equipe de desenvolvimento do sistema.</li>
+              <li style="margin-bottom: 20px">Existem 2 tipos básicos de testes de desenvolvimento:</li>
+              <ol>
+                <li style="margin-bottom: 20px">Teste unitário - é o processo de testar a funcionalidade cada componente do programa, como métodos ou classes de objetos.</li>
+                <li>Teste de sistema - também conhecido como teste de integração, verifica se os componentes do sistema são compatíveis e interagem corretamente.</li>
+              </ol>
+            </ul>
+          </section>
+				</section>
+
+        <section style="text-align: left; font-size: 80%">
+          <h3>Testes de release</h3>
+
+          <section>
+            <ul>
+              <li style="margin-bottom: 20px">O objetivo dessa fase de teste é demonstrar que o sistema cumpre todos os requisitos.</li>
+              <li style="margin-bottom: 20px">O sistema é testado como um todo a partir de diferentes perspectivas, usando:</li>
+              <ul>
+                <li style="margin-bottom: 20px">Testes de requisitos</li>
+                <li style="margin-bottom: 20px">Testes de cenários</li>
+                <li>Testes de desempenho</li>
+              </ul>
+            </ul>
+          </section>
+				</section>
+
+        <section style="text-align: left; font-size: 80%">
+          <h3>Testes de usuário</h3>
+
+          <section>
+            <ul>
+              <li style="margin-bottom: 20px">É um estágio no processo de teste em que os clientes fornecem conselhos e opiniões sobre o sistema.</li>
+              <li style="margin-bottom: 20px">Existem 3 tipos básicos de teste de usuário:</li>
+              <ol>
+                <li style="margin-bottom: 20px">Teste alfa - os usuários trabalham com a equipe de desenvolvimento auxiliando na descoberta de defeitos antecipadamente.</li>
+                <li style="margin-bottom: 20px">Teste beta - uma versão do software é disponibilizada aos usuários para que eles usem e encontrem bugs.</li>
+                <li>Teste de aceitação - os clientes testam o sistema com o objetivo de decidir se ele está ou não pronto para ser implantado.</li>
+              </ol>
+            </ul>
+          </section>
+				</section>
+
+        <section style="text-align: center; font-size: 90%">
+          <h3>Aguardem a chamada!</h3>
+          <br />
+          <h4>Até a próxima!</h4>
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        mouseWheel: true,
+        dependencies: [
+          { src: "plugin/markdown/marked.js" },
+          { src: "plugin/markdown/markdown.js" },
+          { src: "plugin/notes/notes.js", async: true },
+          {
+            src: "plugin/highlight/highlight.js",
+            async: true,
+            callback: function() {
+              hljs.initHighlightingOnLoad();
+            }
+          }
+        ]
+      });
+      Reveal.configure({ slideNumber: "c/t" });
+    </script>
+  </body>
+</html>
